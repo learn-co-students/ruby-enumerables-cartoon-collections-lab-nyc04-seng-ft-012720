@@ -7,9 +7,9 @@ end
 
 def summon_captain_planet(string)# code an argument here
   # Your code here
-  array = []
-  string.each{ |val|  "#{val}!"}
-  
+  string.collect do |call| 
+    call.capitalize << "!"
+  end
 end
 
 def long_planeteer_calls(string)# code an argument here
